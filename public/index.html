@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My App</title>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+    <script src="//anglibs.github.io/angular-location-update/angular-location-update.min.js"></script>
+    <base href="/">
+</head>
+
+<body>
+    <div>
+        <h1>{{message}}</h1>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">Angular Routing Example</a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">
+                                <i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="about">
+                                <i class="fa fa-shield"></i> About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main">
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div ng-view></div>
+        </div>
+    </div>
+</body>
+
+</html>
